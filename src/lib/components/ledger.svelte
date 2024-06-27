@@ -6,7 +6,7 @@
 </script>
 
 <h1 class="my-2">Ledger</h1>
-<ScrollArea class="h-48 w-48 rounded-md border">
+<ScrollArea class="h-48 w-64 rounded-md border">
     <ul>
         {#each entries as entry}
         <li class="text-sm my-2">

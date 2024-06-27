@@ -15,7 +15,7 @@
   <form {onsubmit} class="mb-4">
     <Input type="text" placeholder="Hit Enter to add need" class="w-auto" bind:value={input}></Input>
   </form>
-  <ScrollArea class="h-48 w-48 rounded-md border">
+  <ScrollArea class="h-48 w-64 rounded-md border">
       <ul>
           {#each entries as entry}
           <li class="text-sm my-2">
