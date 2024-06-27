@@ -76,6 +76,6 @@
     @apply bg-background text-foreground;
   }
   h1 {
-    @apply text-2xl text-gray-700;
+    @apply m-2 text-2xl text-gray-700;
   }
 }

@@ -9,20 +9,25 @@
     function onsubmit() {
         entries.push(input);
     }
-  </script>
-  
-  <h1 class="my-2">Things I Need</h1>
-  <form {onsubmit} class="mb-4">
-    <Input type="text" placeholder="Hit Enter to add need" class="w-auto" bind:value={input}></Input>
-  </form>
-  <ScrollArea class="h-48 w-64 rounded-md border">
-      <ul>
-          {#each entries as entry}
-          <li class="text-sm my-2">
-              {entry}
-          </li>
-          <Separator/>
-      {/each}
-      </ul>
-  </ScrollArea>
-  
+</script>
+
+<div class="grid grid-cols-3 grid-rows-1 gap-4">
+    <div>
+        <h1>Things I Need</h1>
+    </div>
+    <div class="col-span-2">
+        <form {onsubmit} class="mb-4">
+            <Input type="text" placeholder="Hit Enter to add need" class="w-full" bind:value={input}></Input>
+        </form>
+    </div>
+</div>
+<ScrollArea class="h-48 w-full rounded-md border">
+    <ul>
+    {#each entries as entry}
+        <li class="text-sm my-2">
+            {entry}
+        </li>
+        <Separator/>
+    {/each}
+    </ul>
+</ScrollArea>

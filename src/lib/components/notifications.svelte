@@ -5,7 +5,7 @@
     let {entries}: Props = $props();
 </script>
 
-<h1 class="my-2">Ledger</h1>
+<h1>Notifications</h1>
 <ScrollArea class="h-48 w-full rounded-md border">
     <ul>
     {#each entries as entry}
@@ -16,3 +16,4 @@
     {/each}
     </ul>
 </ScrollArea>
+  
