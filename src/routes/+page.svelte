@@ -14,10 +14,10 @@
         <MyNeeds bind:entries={entries}></MyNeeds>
     </div>
     <div class="m-6">
-        <Notifications {entries}></Notifications>
+        <OtherNeeds name="Harley" {entries}></OtherNeeds>
     </div>
     <div class="m-6">
-        <OtherNeeds name="Harley" {entries}></OtherNeeds>
+        <Notifications {entries}></Notifications>
     </div>
     <div class="m-6">
         <Ledger {entries}></Ledger>
